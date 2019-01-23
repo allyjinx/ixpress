@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" cibtebt="width=device-width, initial-scale=1.0">
+  <meta gttp-equx="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script src="./assets/js/scripts.js"></script>
+ -->  <title>ixpress page 0</title>
+</head>
+
+<body>
+
+
+
+  <ons-navigator swipeable id="myNavigator" page="page0.html"></ons-navigator>
+
+
+
+
+
+
+<!-- PAGE 0 - FIRST PAGE U SEE WHEN U ARE BLESSED ENOUGH TO OPEN OUR APP
+ -->
+    <template id="page0.html">
+      <ons-page id="page0">
+        <div class="card card--custom">
+          <img class="logoimage" src="assets/images/logotrans.png">
+          <h2 class="title">ixpress</h2>
+          <h2 class="subtitle">the beauty membership</h2>
+        </div>
+
+
+
+
+        <ons-button id="sign-up-button" class="button--large--cta button--signin button--signup">sign up</ons-button>
+
+        <h2 class="tiny_text">already a member?</h2>
+
+        <ons-button id="login-button" class="button--large--cta button--signin button--login">log in</ons-button>
+
+      </ons-page>
+    </template>
+
+
+
+<!-- NEW USER PAGE -- USER SIGNS UP FOR IXPRESS, FILLS OUT THEIR INFO/ CONNECTS WITH SOCIAL MEDIA  -->
+
+
+    <template id="newuser.html">
+      <ons-page id="newuser">
+
+
+        <div>
+          <div class="card card--custom">
+            <img class="logoimage" src="assets/images/logotrans.png">
+            <h2 class="title">ixpress</h2>
+            <h2 class="subtitle">the beauty membership</h2>
+          </div>
+        </div>
+
+          <h2 class="title--form">join ixpress</h2>
+
+        <div class="social_buttons">
+          <div class="social_buttons_inner">
+            <button id="facebook-register-button" class="button--cta button--social button--facebook">
+            <i class="tabbar__icon tabbar--material__icon zmdi zmdi-facebook"></i>Facebook</button>
+            <button id="google-register-button" class="button--cta button--social button--google">
+            <i class="tabbar__icon tabbar--material__icon zmdi zmdi-google"></i>Google</button>
+          </div>
+        </div>
+
+          <h2 class="subtitle--form">...or sign up here!</h2>
+
+
+<!-- NEW USER SIGN UP FORM HERE!!!!!
+ -->
+      <span class="center_element">
+          <div><input class="text-input text-input--material" placeholder="First Name" type="text" required></div>
+          <br />
+          <div><input class="text-input text-input--material" placeholder="Last Name" type="text" required></div>
+          <br />
+          <div><input class="text-input text-input--material" placeholder="Email Address" type="text" required></div>
+          <br />
+          <div><input class="text-input text-input--material" placeholder="Password" type="password" required></div>
+          <br />
+          <div><input class="text-input text-input--material" placeholder="Confirm Password" type="password" required></div>
+      </span>
+
+
+
+          <ons-button id="register-button" class="button--large--cta button--next">thank u, next</ons-button>
+
+      </ons-page>
+    </template>
+
+
+
+
+<!-- THIS IS THE PAGE THAT YOU GO TO LOG IN AS AN EXISTING USER! SIMPLY INPUT YOUR USERNAME AND PASSWORD/ SIGN IN WITH SOCIAL MEDIAAAAAAA
+ -->
+
+  <template id="signin.html">
+    <ons-page id="signin">
+
+      <div class="card card--custom">
+        <img class="logoimage" src="assets/images/logotrans.png">
+        <h2 class="title">ixpress</h2>
+        <h2 class="subtitle">the beauty membership</h2>
+      </div>
+
+      <div class="social_buttons">
+        <div class="social_buttons_inner">
+
+          <button class="button--cta button--social">
+          <i class="tabbar__icon tabbar--material__icon zmdi zmdi-facebook"></i>Facebook</button>
+          <button class="button--cta button--social">
+          <i class="tabbar__icon tabbar--material__icon zmdi zmdi-google"></i>Google</button>
+
+        </div>
+      </div>
+
+      <span class="center_element">
+        <div><input class="text-input text-input--material" placeholder="Username" type="text" required></div>
+        <br />
+        <div><input class="text-input text-input--material" placeholder="Password" type="password" required></div>
+      </span>
+
+      <ons-button id="signin-button" class="button--large--cta button--next">thank u, next</ons-button>
+
+    </ons-page>
+  </template>
+
+
+
+<!-- WELCOME PAGEEEEE
+ -->
+
+ <template id="welcome.html">
+    <ons-page id="welcome">
+      <div class="welcome--card">
+    <div class="card welcome--card">
+      <div class="card welcome--image_card">
+      </div>
+      <span class="welcome--card_text">
+        <h2 class="title">welcome</h2>
+        <h3 class="welcome--subtitle">to ixpress</h3>
+        <h2 class="subtitle">ixpress is the beauty subscription application that allows you to use your
+        beauty credits at affiliated salons around the city at your convinience</h2>
+      </span>
+    </div>
+</div>
+
+<div class="welcome--card">
+  <div class="card welcome--card">
+    <div class="card welcome--image_cardA">
+    </div>
+    <span class="welcome--card_text">
+      <h2 class="title">salons around you</h2>
+      <h3 class="welcome--subtitle"></h3>
+      <h2 class="subtitle">search for salons around you and book
+      right through the app!</h2>
+    </span>
+  </div>
+</div>
+
+<div class="welcome--card">
+  <div class="card welcome--card">
+    <div class="card welcome--image_cardA">
+    </div>
+    <span class="welcome--card_text">
+      <h2 class="title">discounts and surge pricing</h2>
+      <h3 class="welcome--subtitle"></h3>
+      <h2 class="subtitle">when salons are not busy they can lower their prices so you can get the
+      best deals </h2>
+    </span>
+  </div>
+</div>
+
+
+<ons-button id="signin-button" class="button--large--cta button--next">thank u, next</ons-button>
+
+
+  </ons-page>
+</template>
+
+
+
+<!-- HOMEPAGE --- STARTS --- NOW ---------
+ -->
+<template id='homepage.html'>
+ <ons-page id='homepage'>
+
+      <div class="homepage">
+        <div class="logo_header">
+          <img class="logoimage" src="assets/images/logotrans.png">
+        </div>
+
+
+      <div class="homepage_search">
+        <h2> Search for anything here!</h2>
+        <input type="search" value="" placeholder="Search" class="search-input">
+        <h2> Or browse by service type</h2>
+      </div>
+
+
+      <div class="social_buttons_inner">
+        <button id="nails-button" class="button--cta button--homepage button--homepage_nails">
+        <i class="tabbar__icon tabbar--material__icon fa fa-hand-peace-o zmdi-thumb-up"></i>Nails</button>
+        <button class="button--cta button--homepage button--homepage_hair">
+        <i class="tabbar__icon tabbar--material__icon fa fa-scissors"></i>Hair</button>
+        <button class="button--cta button--homepage button--homepage_eyelash">
+        <i class="tabbar__icon tabbar--material__icon fa fa-eye"></i>Eyelash</button>
+        <button class="button--cta button--homepage button--homepage_misc">
+        <i class="tabbar__icon tabbar--material__icon fa fa-cogs"></i>Misc</button>
+      </div>
+
+
+      <ons-button id="dailydeals-button" class="button--large--cta button--next">daily deals</ons-button>
+
+
+      <ons-bottom-toolbar>
+        <div class="tabbar tabbar--material">
+      <label class="tabbar__item tabbar--material__item">
+        <input type="radio" name="tabbar-material-a" checked="checked">
+        <button class="tabbar__button tabbar--material__button">
+          <i class="tabbar__icon tabbar--material__icon fas fa-home"></i>
+          <div class="tabbar__label">Home</div>
+        </button>
+      </label>
+
+
+      <label class="tabbar__item tabbar--material__item">
+        <input type="radio" name="tabbar-material-a">
+        <button class="tabbar__button tabbar--material__button">
+          <i class="tabbar__icon tabbar--material__icon fas fa-map-pin"></i>
+          <div class="tabbar__label">Map</div>
+        </button>
+      </label>
+
+      <label class="tabbar__item tabbar--material__item">
+          <input type="radio" name="tabbar-material-a">
+          <button class="tabbar__button tabbar--material__button">
+            <i class="tabbar__icon tabbar--material__icon far fa-calendar-alt"></i>
+            <div class="tabbar__label">Appointments</div>
+          </button>
+        </label>
+
+        <label class="tabbar__item tabbar--material__item">
+          <input type="radio" name="tabbar-material-a">
+          <button class="tabbar__button tabbar--material__button">
+            <i class="tabbar__icon tabbar--material__icon fas fa-heart"></i>
+            <div class="tabbar__label">Favourites</div>
+          </button>
+        </label>
+
+
+
+    </div>
+    </ons-bottom-toolbar>
+
+    <template id="homepage.html">
+    <ons-page id="homepage">
+    </ons-page>
+    </template>
+
+    <template id="Map.html">
+    <ons-page id="map.html">
+    </ons-page>
+    </template>
+
+    <template id="calendar.html">
+    <ons-page id="calendar.html">
+    </ons-page>
+    </template>
+
+    <template id="heart.html">
+    <ons-page id="heart.html">
+    </ons-page>
+    </template>
+
+
+  </ons-page>
+</template>
+
+<template id="map.html">
+  <ons-page id="map">
+
+    <div class="card welcome--image_cardA">
+      </div>
+
+
+  </ons-page>
+</template>
+
+<template id="dailydeals.html">
+<ons-page id="dailydeals">
+
+  <div class="card card--custom">
+    <img class="logoimage" src="assets/images/logotrans.png">
+    <h2 class="title">ixpress</h2>
+    <h2 class="subtitle">the beauty membership</h3>
+  </div>
+
+<h2> Daily deals </h2>
+<ul>
+<li>Today at Polish'd nail bar get 20% off </li>
+<li>Tomorrow at Waxon get $2 off an upper lip wax between 10am-1pm</li>
+<li>Friday at MYNC beauty get $5 off a fill between 4-5pm</li>
+</ul>
+
+
+  <ons-bottom-toolbar>
+      <div class="tabbar tabbar--material">
+    <label class="tabbar__item tabbar--material__item">
+      <input type="radio" name="tabbar-material-a" checked="checked">
+      <button class="tabbar__button tabbar--material__button">
+        <i class="tabbar__icon tabbar--material__icon fas fa-home"></i>
+        <div class="tabbar__label">Home</div>
+      </button>
+    </label>
+
+
+    <label class="tabbar__item tabbar--material__item">
+      <input type="radio" name="tabbar-material-a">
+      <button class="tabbar__button tabbar--material__button">
+        <i class="tabbar__icon tabbar--material__icon fas fa-map-pin"></i>
+        <div class="tabbar__label">Map</div>
+      </button>
+    </label>
+
+    <label class="tabbar__item tabbar--material__item">
+      <input type="radio" name="tabbar-material-a">
+      <button class="tabbar__button tabbar--material__button">
+        <i class="tabbar__icon tabbar--material__icon far fa-calendar-alt"></i>
+        <div class="tabbar__label">Appointments</div>
+      </button>
+    </label>
+
+    <label class="tabbar__item tabbar--material__item">
+      <input type="radio" name="tabbar-material-a">
+      <button class="tabbar__button tabbar--material__button">
+        <i class="tabbar__icon tabbar--material__icon fas fa-heart"></i>
+        <div class="tabbar__label">Favourites</div>
+      </button>
+    </label>
+
+  </div>
+  </ons-bottom-toolbar>
+
+
+</ons-page>
+</template>
+
+
+<template id="searchresults.html">
+<ons-page id="searchresults">
+
+  <input type="search" value="" placeholder="Search" class="search-input">
+
+  <ul class="list">
+<li class="list-item">
+  <div class="list-item__center">
+    Filter 1
+  </div>
+  <div class="list-item__right">
+    <label class="switch">
+      <input type="checkbox" class="switch__input" checked>
+      <div class="switch__toggle">
+        <div class="switch__handle"></div>
+      </div>
+    </label>
+  </div>
+</li>
+<li class="list-item">
+  <div class="list-item__center">
+    Filter 2
+  </div>
+  <div class="list-item__right">
+    <label class="switch">
+      <input type="checkbox" class="switch__input">
+      <div class="switch__toggle">
+        <div class="switch__handle"></div>
+      </div>
+    </label>
+  </div>
+</li>
+</ul>
+
+<ul class="list">
+<li class="list-item">
+  <div class="list-item__left">
+    <img class="list-item__thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwJCB8v/9zErgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAvSURBVFjD7c0BDQAACAMgtX+KJzWGm4MCdJK6MHVELBaLxWKxWCwWi8VisVj8MV7qBgI2A8rYpgAAAABJRU5ErkJggg==">
+  </div>
+
+  <div class="list-item__center">
+    <div class="list-item__title">Alice</div>
+    <div class="list-item__subtitle">Description</div>
+  </div>
+
+  <div class="list-item__right">
+    <i class="ion-ios-information list-item__icon"></i>
+  </div>
+</li>
+
+<li class="list-item">
+  <div class="list-item__left">
+    <img class="list-item__thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwJCB8v/9zErgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAvSURBVFjD7c0BDQAACAMgtX+KJzWGm4MCdJK6MHVELBaLxWKxWCwWi8VisVj8MV7qBgI2A8rYpgAAAABJRU5ErkJggg==">
+  </div>
+
+  <div class="list-item__center">
+    <div class="list-item__title">Bob</div>
+    <div class="list-item__subtitle">Description</div>
+  </div>
+
+  <div class="list-item__right">
+    <i class="ion-ios-information list-item__icon"></i>
+  </div>
+</li>
+</ul>
+
+<ons-bottom-toolbar>
+  <div class="tabbar tabbar--material">
+<label class="tabbar__item tabbar--material__item">
+  <input type="radio" name="tabbar-material-a">
+  <button class="tabbar__button tabbar--material__button">
+    <i class="tabbar__icon tabbar--material__icon fas fa-home"></i>
+    <div class="tabbar__label">Home</div>
+  </button>
+</label>
+
+
+<label class="tabbar__item tabbar--material__item">
+  <input type="radio" name="tabbar-material-a">
+  <button class="tabbar__button tabbar--material__button">
+    <i class="tabbar__icon tabbar--material__icon fas fa-map-pin"></i>
+    <div class="tabbar__label">Map</div>
+  </button>
+</label>
+
+<label class="tabbar__item tabbar--material__item">
+  <input type="radio" name="tabbar-material-a" checked="checked">
+  <button class="tabbar__button tabbar--material__button">
+    <i class="tabbar__icon tabbar--material__icon far fa-calendar-alt"></i>
+    <div class="tabbar__label">Appointments</div>
+  </button>
+</label>
+
+<label class="tabbar__item tabbar--material__item">
+  <input type="radio" name="tabbar-material-a">
+  <button class="tabbar__button tabbar--material__button">
+    <i class="tabbar__icon tabbar--material__icon fas fa-heart"></i>
+    <div class="tabbar__label">Favourites</div>
+  </button>
+</label>
+
+</div>
+</ons-bottom-toolbar>
+
+</ons-page>
+</template>
+
+
+
+
+
+</body>
