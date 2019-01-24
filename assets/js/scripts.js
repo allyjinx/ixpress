@@ -23,9 +23,16 @@ document.addEventListener('init', function(event) {
       page.querySelector('#dailydeals-button').onclick = function() {
         document.querySelector('#myNavigator').pushPage('dailydeals.html');
       };
-      //NOT WORKING//
-    }else if (page.id === 'homepage'){
       page.querySelector('#nails-button').onclick = function() {
+        document.querySelector('#myNavigator').pushPage('searchresults.html');
+      };
+      page.querySelector('#hair-button').onclick = function() {
+        document.querySelector('#myNavigator').pushPage('searchresults.html');
+      };
+      page.querySelector('#eyelash-button').onclick = function() {
+        document.querySelector('#myNavigator').pushPage('searchresults.html');
+      };
+      page.querySelector('#misc-button').onclick = function() {
         document.querySelector('#myNavigator').pushPage('searchresults.html');
       };
     }
